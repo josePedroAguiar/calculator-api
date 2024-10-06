@@ -10,7 +10,7 @@ import java.math.RoundingMode;
 public class CalculatorService {
 
     @RabbitListener(queues = "calculator_queue")
-    public BigDecimal calculateOperation(String message) {
+    public BigDecimal calculate(String message) {
         String[] parts = message.split(":");
         String operation = parts[0];
         String[] numbers = parts[1].split(",");
@@ -26,8 +26,10 @@ public class CalculatorService {
                 return a.multiply(b);
             case "divide":
                 if (b.compareTo(BigDecimal.ZERO) == 0) {
-                    throw new ArithmeticException("Division by zero");
+                    throw new IllegalArgumentException("Denominator cannot be zero.");
+                    break;
                 }
+
                 return a.divide(b, 10, RoundingMode.HALF_UP);
             default:
                 throw new IllegalArgumentException("Unknown operation: " + operation);
