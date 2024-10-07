@@ -1,7 +1,7 @@
 
 ## Spring Boot
 ```ssh
-
+./gradlew bootRun
 ```
 ## RabbitMQ
 ```ssh
