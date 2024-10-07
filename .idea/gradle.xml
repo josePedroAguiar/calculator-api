@@ -4,13 +4,10 @@
     <option name="linkedExternalProjectsSettings">
       <GradleProjectSettings>
         <option name="distributionType" value="DEFAULT_WRAPPED" />
-        <option name="externalProjectPath" value="$PROJECT_DIR$/calculator" />
-        <option name="gradleJvm" value="jbr-17" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$" />
         <option name="modules">
           <set>
-            <option value="$PROJECT_DIR$/calculator" />
-            <option value="$PROJECT_DIR$/calculator/calculator-module" />
-            <option value="$PROJECT_DIR$/calculator/rest-module" />
+            <option value="$PROJECT_DIR$" />
           </set>
         </option>
       </GradleProjectSettings>
