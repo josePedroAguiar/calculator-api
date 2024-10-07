@@ -1,4 +1,7 @@
 calculator-module/HELP.md
+rest-module/HELP.md
+.DS_Store
+.idea
 .gradle
 build/
 !gradle/wrapper/gradle-wrapper.jar
