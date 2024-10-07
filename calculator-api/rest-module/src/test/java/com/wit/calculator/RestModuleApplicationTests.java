@@ -1,13 +1,16 @@
 package com.wit.calculator;
 
-import org.junit.jupiter.api.Test;
+import org.junit.Test;
 import org.springframework.boot.test.context.SpringBootTest;
 
-@SpringBootTest
+
 class RestModuleApplicationTests {
+
+
 
     @Test
     void contextLoads() {
+
     }
 
 }
