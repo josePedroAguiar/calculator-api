@@ -1,6 +1,21 @@
 
 ## Spring Boot
+
+
+### Run both modules in parallel
 ```ssh
+./gradlew :calculator-module:bootRun :rest-module:bootRun --parallel
+```
+### Run both modules separately
+
+#### Run Calculator Module
+```ssh
+cd calculator-module
+./gradlew bootRun
+```
+#### Run REST Module
+```ssh
+cd rest-module
 ./gradlew bootRun
 ```
 ## RabbitMQ

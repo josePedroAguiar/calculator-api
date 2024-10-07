@@ -1,2 +1,2 @@
 rootProject.name = 'calculator-api'
-
+include 'calculator-module', 'rest-module'
