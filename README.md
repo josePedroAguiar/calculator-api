@@ -22,7 +22,7 @@ cd rest-module
 ```ssh
 docker pull rabbitmq
 docker run -d --name rabbitmq-server -p 5672:5672 -p 15672:15672 rabbitmq:management\n
-docker exec -it rabbitmq-container-name rabbitmqctl list_queues\n```
+docker exec -it rabbitmq-container-name rabbitmqctl list_queues
 ```
 
 ### Ref:
